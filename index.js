@@ -55,7 +55,7 @@ let itemSelected = stock.find(item => item.id == items);
 
 let cantidad = parseInt(prompt("Elegiste " + itemSelected.name + ". Cuantos queres comprar?"));
 
-let masIVA = (itemSelected.price + cantidad) * 1.21;
+let masIVA = (itemSelected.price * cantidad) * 1.21;
 
 alert("Seleccionaste " + cantidad +" unidades del producto: " + itemSelected.name + " por un total de: $" +(cantidad * itemSelected.price + ". Y un total de $" + masIVA.toFixed(2) + " con impuestos."));
 
